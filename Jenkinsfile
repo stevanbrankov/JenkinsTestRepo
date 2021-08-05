@@ -1,7 +1,7 @@
 pipeline{
   agent any 
   
-//   stages{
+  stages{
 //     stage ('SCM Checkout'){
 //       steps{
 //         git 'https://github.com/stevanbrankov/JenkinsTestRepo.git'
