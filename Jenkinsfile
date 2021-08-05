@@ -2,15 +2,10 @@ pipeline{
   agent any 
   
   stages{
-    stage ('Clean'){
+    stage ('SCM Checkout'){
       steps{
-       mvn clean 
+        git 'https://github.com/stevanbrankov/JenkinsTestRepo.git'
       }
-    }
-    stage ('Install'){
-         steps{
-       mvn install 
-      }  
     }
     stage ('Third stage'){
            steps{
