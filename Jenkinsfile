@@ -5,6 +5,7 @@ pipeline{
     stage ('Clean install'){
            steps{
       // sh "mvn clean install" 
+             echo "suup"
       }
     }
   }
